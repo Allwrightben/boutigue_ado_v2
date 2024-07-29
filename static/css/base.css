@@ -38,6 +38,12 @@ body {
     color: white;
 }
 
+.btn.outline-black {
+    background: white;
+    border: 1px solid black;
+    color: black !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
