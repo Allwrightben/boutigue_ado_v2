@@ -27,7 +27,7 @@
 
 .fieldset-label {
     position: relative;
-    right: .5rem;
+    right: 1rem;
 }
 
 #payment-form .form-control,
