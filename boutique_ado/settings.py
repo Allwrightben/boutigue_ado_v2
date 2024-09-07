@@ -29,16 +29,14 @@ DEBUG = 'DEVELOPMENT' in os.environ
 # ALLOWED_HOSTS = ['*']
 
 ALLOWED_HOSTS = [
-    'bens-boutique-ado-cfc020991ecb.herokuapp.com/',
+    'bens-boutique-ado-cfc020991ecb.herokuapp.com',
     'bens-boutique-ado.herokuapp.com',
     'localhost',
     'http://127.0.0.1:8000/',
     '127.0.0.1',
 ]
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -191,6 +189,7 @@ if 'USE_AWS' in os.environ:
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+    AWS_S3_HOST = 's3.eu-west-2.amazonaws.com'
 
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
