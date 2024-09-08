@@ -1,1 +1,1 @@
-web: gunicorn boutique_ado.wsgi:application
+web: pip install setuptools==57.5.0 && gunicorn boutique_ado.wsgi:application
