@@ -1,1 +1,2 @@
-web: bash install_dependencies.sh && gunicorn boutique_ado.wsgi:application
+release: ./install_dependencies.sh
+web: gunicorn boutique_ado.wsgi:application
