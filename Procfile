@@ -1,1 +1,1 @@
-web: pip install setuptools==57.5.0 && gunicorn boutique_ado.wsgi:application
+web: bash install_dependencies.sh && gunicorn boutique_ado.wsgi:application
